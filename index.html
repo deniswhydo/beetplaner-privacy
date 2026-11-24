@@ -25,7 +25,7 @@
 <!-- ============================ DEUTSCH ============================ -->
 <section id="de">
 <h1>Datenschutzerklärung für BeetPlaner</h1>
-<p class="muted">Stand: 12. Juni 2026</p>
+<p class="muted">Stand: 24. November 2026</p>
 
 <h2>1. Verantwortlicher</h2>
 <p>
@@ -37,39 +37,50 @@ E-Mail: <a href="mailto:denis.terze@gmail.com">denis.terze@gmail.com</a>
 <h2>2. Überblick</h2>
 <p>
 BeetPlaner ist eine App zur Planung von Gartenbeeten. Deine Gartendaten werden
-<strong>ausschließlich lokal auf deinem Gerät</strong> gespeichert. Wir betreiben keine
+<strong>lokal auf deinem Gerät</strong> gespeichert. Wir betreiben keine
 eigenen Server, verwenden keine Werbung, kein Tracking und keine Analyse-Tools zur
-Profilbildung. Daten verlassen dein Gerät nur in den unten beschriebenen Fällen.
+Profilbildung. Wir selbst erhalten deine Gartendaten nie. Daten verlassen dein Gerät nur
+in den unten beschriebenen Fällen.
 </p>
 
 <h2>3. Welche Daten verarbeitet werden</h2>
 
-<h3>3.1 Lokal gespeicherte Daten (verlassen dein Gerät nicht)</h3>
+<h3>3.1 Lokal gespeicherte Daten</h3>
 <p>
 Beete, Pflanzen, Platzierungen, Kalender-/Aufgabendaten und App-Einstellungen werden
 in einer lokalen Datenbank auf deinem Gerät gespeichert. Diese Daten werden nicht an
-uns oder Dritte übertragen. Bei Deinstallation der App werden sie gelöscht.
+uns übertragen. Bei Deinstallation der App werden sie vom Gerät gelöscht.
+</p>
+<p>
+<strong>Android-Sicherung:</strong> Wenn auf deinem Gerät die Sicherung von Android
+eingeschaltet ist, sichert Android diese Datenbank (einschließlich eines gespeicherten
+Standorts, siehe 3.2) in deinem eigenen Google-Konto oder überträgt sie beim Wechsel auf ein
+neues Gerät. Ob das geschieht, legst du in den Android-Einstellungen fest; dort kannst du
+die Sicherung auch abschalten und löschen. Wir haben keinen Zugriff auf diese Sicherung.
 </p>
 
-<h3>3.2 Standort (optional, für das Wetter)</h3>
+<h3>3.2 Standort (optional, für Wetter, Frostwarnung und Aussaatzeiten)</h3>
 <p>
-Wenn du das Wetter nutzt, benötigt die App deinen ungefähren Standort, um lokale
-Wetterdaten abzurufen. Du hast zwei Möglichkeiten:
+Wenn du einen Standort festlegst, nutzt die App deinen ungefähren Standort für drei Dinge:
+das aktuelle Wetter, die Frostvorhersage und die Anpassung der Aussaat- und Erntezeiten an
+das Klima deiner Region (dafür werden Temperaturwerte der vergangenen Jahre abgerufen).
+Du hast zwei Möglichkeiten:
 </p>
 <ul>
   <li><strong>Automatisch (GPS):</strong> Mit deiner Zustimmung ermittelt die App über
-      die Standortberechtigung deine Gerätekoordinaten. Die Berechtigung kannst du
+      die Berechtigung für den ungefähren Standort deine Koordinaten. Die Berechtigung kannst du
       jederzeit in den Systemeinstellungen widerrufen.</li>
   <li><strong>Manuell:</strong> Du gibst einen Ortsnamen ein; dieser wird zur Ermittlung
       der Koordinaten an Open-Meteo gesendet (siehe 4.1).</li>
 </ul>
 <p>
-Die Koordinaten bzw. der Ortsname werden zum Abruf der Wetterdaten an Open-Meteo
-übermittelt. Wir speichern deinen Standort nicht auf eigenen Servern; lokal wird
-lediglich der zuletzt gewählte Ort für die Anzeige gespeichert.
+Die Koordinaten bzw. der Ortsname werden zum Abruf der Wetter- und Klimadaten an Open-Meteo
+übermittelt. Wir speichern deinen Standort nicht auf eigenen Servern. Lokal gespeichert
+werden die Koordinaten, der Ortsname und daraus abgeleitete Werte (zum Beispiel die
+Klima-Anpassung). Du kannst den Standort jederzeit in den Einstellungen der App löschen.
 </p>
 <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, durch
-aktive Nutzung des Wetter-Features bzw. Erteilung der Standortberechtigung).</p>
+Festlegen eines Standorts bzw. Erteilung der Standortberechtigung).</p>
 
 <h3>3.3 Absturzberichte (Crashlytics)</h3>
 <p>
@@ -82,15 +93,17 @@ Absturzes und ein anonymer Installations-Identifier sowie der technische Fehler-
 Diese Daten enthalten keine von dir eingegebenen Gartendaten.
 </p>
 <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) sowie
-§ 25 Abs. 1 TDDDG für den Zugriff auf den Installations-Identifier. Du kannst deine
+die nationalen Vorschriften zur Umsetzung von Art. 5 Abs. 3 der Richtlinie 2002/58/EG
+(in Deutschland § 25 Abs. 1 TDDDG) für den Zugriff auf den Installations-Identifier. Du kannst deine
 Einwilligung jederzeit mit Wirkung für die Zukunft in den Einstellungen widerrufen.</p>
 
 <h2>4. Empfänger / Drittanbieter</h2>
 
 <h3>4.1 Open-Meteo</h3>
 <p>
-Wetter- und Geocoding-Daten werden von <strong>Open-Meteo</strong> bezogen
-(<code>api.open-meteo.com</code>, <code>geocoding-api.open-meteo.com</code>). Dabei
+Wetter-, Klima- und Geocoding-Daten werden von <strong>Open-Meteo</strong> bezogen
+(<code>api.open-meteo.com</code>, <code>archive-api.open-meteo.com</code>,
+<code>geocoding-api.open-meteo.com</code>). Dabei
 werden Koordinaten bzw. ein Ortsname übermittelt. Open-Meteo ist ein in der EU
 ansässiger Dienst und benötigt keine Registrierung/keinen API-Schlüssel. Datenschutz:
 <a href="https://open-meteo.com/en/terms">https://open-meteo.com/en/terms</a>.
@@ -107,14 +120,15 @@ bzw. EU-US Data Privacy Framework). Weitere Informationen:
 <h2>5. Berechtigungen</h2>
 <table>
   <tr><th>Berechtigung</th><th>Zweck</th></tr>
-  <tr><td>Standort (grob/genau)</td><td>Optional, nur für automatischen Wetter-Standort</td></tr>
-  <tr><td>Internet</td><td>Abruf von Wetterdaten und Übermittlung von Absturzberichten</td></tr>
+  <tr><td>Ungefährer Standort</td><td>Optional, nur für die automatische Standortbestimmung</td></tr>
+  <tr><td>Internet</td><td>Abruf von Wetter- und Klimadaten, Ortssuche und Übermittlung von Absturzberichten</td></tr>
 </table>
 
 <h2>6. Speicherdauer</h2>
 <p>
 Lokale Gartendaten bleiben gespeichert, bis du sie in der App löschst oder die App
-deinstallierst. Absturzberichte werden von Google gemäß deren Aufbewahrungsfristen
+deinstallierst. Eine Android-Sicherung in deinem Google-Konto verwaltest du selbst über die
+Android-Einstellungen. Absturzberichte werden von Google gemäß deren Aufbewahrungsfristen
 (i. d. R. bis zu 90 Tage) gespeichert.
 </p>
 
@@ -125,7 +139,9 @@ Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Recht, eine Einwil
 widerrufen. Lokale Daten kannst du jederzeit selbst über die App oder durch Deinstallation
 löschen. Für Anliegen wende dich an
 <a href="mailto:denis.terze@gmail.com">denis.terze@gmail.com</a>. Außerdem steht dir ein
-Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu.
+Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu, zum Beispiel an deinem Wohnort.
+Für uns zuständig ist die kroatische Datenschutzbehörde Agencija za zaštitu osobnih podataka
+(AZOP), <a href="https://azop.hr">https://azop.hr</a>.
 </p>
 
 <h2>8. Kinder</h2>
@@ -144,7 +160,7 @@ dieser URL abrufbar; das Datum oben weist die letzte Änderung aus.
 <!-- ============================ ENGLISH ============================ -->
 <section id="en" lang="en">
 <h1>Privacy Policy for BeetPlaner</h1>
-<p class="muted">Last updated: 12 June 2026</p>
+<p class="muted">Last updated: 24 November 2026</p>
 
 <h2>1. Data controller</h2>
 <p>
@@ -156,35 +172,45 @@ Email: <a href="mailto:denis.terze@gmail.com">denis.terze@gmail.com</a>
 <h2>2. Overview</h2>
 <p>
 BeetPlaner helps you plan garden beds. Your garden data is stored
-<strong>exclusively on your device</strong>. We run no servers of our own and use no
-advertising, no tracking and no profiling analytics. Data leaves your device only in the
-cases described below.
+<strong>locally on your device</strong>. We run no servers of our own and use no
+advertising, no tracking and no profiling analytics. We ourselves never receive your garden
+data. Data leaves your device only in the cases described below.
 </p>
 
 <h2>3. Data we process</h2>
 
-<h3>3.1 Locally stored data (never leaves your device)</h3>
+<h3>3.1 Locally stored data</h3>
 <p>
 Garden beds, plants, placements, calendar/task data and app settings are stored in a local
-database on your device. This data is not transmitted to us or any third party and is
-removed when you uninstall the app.
+database on your device. This data is not transmitted to us and is removed from the device
+when you uninstall the app.
+</p>
+<p>
+<strong>Android backup:</strong> If Android's backup is switched on for your device, Android
+backs up this database (including a stored location, see 3.2) to your own Google account, or
+transfers it when you move to a new device. You control this in the Android settings, where
+you can also switch the backup off and delete it. We have no access to this backup.
 </p>
 
-<h3>3.2 Location (optional, for weather)</h3>
-<p>If you use the weather feature, the app needs your approximate location to fetch local weather. You have two options:</p>
+<h3>3.2 Location (optional, for weather, frost warnings and sowing times)</h3>
+<p>If you set a location, the app uses your approximate location for three things: the current
+weather, the frost forecast, and adjusting sowing and harvest times to your regional climate
+(for this, temperature values of past years are retrieved). You have two options:</p>
 <ul>
-  <li><strong>Automatic (GPS):</strong> With your consent, the app uses the location
-      permission to obtain your device coordinates. You can revoke this permission at any
+  <li><strong>Automatic (GPS):</strong> With your consent, the app uses the approximate
+      location permission to obtain your coordinates. You can revoke this permission at any
       time in your system settings.</li>
   <li><strong>Manual:</strong> You enter a place name, which is sent to Open-Meteo to look
       up coordinates (see 4.1).</li>
 </ul>
 <p>
-The coordinates or place name are sent to Open-Meteo to retrieve weather data. We do not
-store your location on any server; only your last selected place is kept locally for display.
+The coordinates or place name are sent to Open-Meteo to retrieve weather and climate data. We
+do not store your location on any server of our own. The coordinates, the place name and values
+derived from them (for example the climate adjustment) are stored locally. You can delete the
+location at any time in the app settings.
 </p>
-<p><strong>Legal basis:</strong> Art. 6(1)(a) GDPR (consent, via active use of the weather
-feature or granting the location permission).</p>
+<p><strong>Legal basis:</strong> Art. 6(1)(a) GDPR (consent, by setting a location or
+granting the location permission).</p>
 
 <h3>3.3 Crash reports (Crashlytics)</h3>
 <p>
@@ -195,16 +221,18 @@ crash data is transmitted. When a crash occurs, technical data is collected, inc
 device model, OS version, crash timestamp, an anonymous installation identifier and the
 technical stack trace. This data does not include the garden data you enter.
 </p>
-<p><strong>Legal basis:</strong> Art. 6(1)(a) GDPR (consent), and § 25(1) of the German
-TDDDG for accessing the installation identifier. You can withdraw your consent at any time
+<p><strong>Legal basis:</strong> Art. 6(1)(a) GDPR (consent), and the national rules
+implementing Art. 5(3) of Directive 2002/58/EC (in Germany § 25(1) TDDDG) for accessing the
+installation identifier. You can withdraw your consent at any time
 with effect for the future in the settings.</p>
 
 <h2>4. Recipients / third parties</h2>
 
 <h3>4.1 Open-Meteo</h3>
 <p>
-Weather and geocoding data are obtained from <strong>Open-Meteo</strong>
-(<code>api.open-meteo.com</code>, <code>geocoding-api.open-meteo.com</code>), transmitting
+Weather, climate and geocoding data are obtained from <strong>Open-Meteo</strong>
+(<code>api.open-meteo.com</code>, <code>archive-api.open-meteo.com</code>,
+<code>geocoding-api.open-meteo.com</code>), transmitting
 coordinates or a place name. Open-Meteo is an EU-based service and requires no
 registration/API key. Terms:
 <a href="https://open-meteo.com/en/terms">https://open-meteo.com/en/terms</a>.
@@ -221,13 +249,14 @@ Framework). More information:
 <h2>5. Permissions</h2>
 <table>
   <tr><th>Permission</th><th>Purpose</th></tr>
-  <tr><td>Location (coarse/fine)</td><td>Optional, only for automatic weather location</td></tr>
-  <tr><td>Internet</td><td>Fetching weather data and sending crash reports</td></tr>
+  <tr><td>Approximate location</td><td>Optional, only for automatic location detection</td></tr>
+  <tr><td>Internet</td><td>Fetching weather and climate data, place search and sending crash reports</td></tr>
 </table>
 
 <h2>6. Retention</h2>
 <p>
-Local garden data is kept until you delete it in the app or uninstall the app. Crash
+Local garden data is kept until you delete it in the app or uninstall the app. You manage an
+Android backup in your Google account yourself via the Android settings. Crash
 reports are retained by Google according to their retention periods (typically up to 90 days).
 </p>
 
@@ -237,7 +266,9 @@ Under the GDPR you have the right to access, rectification, erasure, restriction
 processing, data portability and objection, as well as the right to withdraw consent. You
 can delete local data yourself at any time via the app or by uninstalling it. For requests,
 contact <a href="mailto:denis.terze@gmail.com">denis.terze@gmail.com</a>. You also have the
-right to lodge a complaint with a data protection supervisory authority.
+right to lodge a complaint with a data protection supervisory authority, for example where you
+live. The authority responsible for us is the Croatian data protection agency Agencija za
+zaštitu osobnih podataka (AZOP), <a href="https://azop.hr">https://azop.hr</a>.
 </p>
 
 <h2>8. Children</h2>
